@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  font: normal 24px Arial;
+}
+
+body {
+  background-color: #173e919c;
+}
+
+.calculadora {
+  border: 5px solid rgba(0, 0, 0, 0.349);
+  background-color: rgba(1, 49, 9, 0.5);
+  border-radius: 25px;
+  padding: 1rem;
+  margin: 5rem auto;
+  height: 335px;
+  width: 200px;
+}
+
+.calculadora > .tela-calculadora > input {
+  padding: 5px;
+  font-size: 1.5rem;
+  text-align: right;
+  border: none;
+  border-radius: 1px;
+  background-color: #05ff2f67;
+  outline: 3px solid rgba(0, 0, 0, 0.61);
+  width: 95%;
+  height: 100%;
+}
+
+.calculadora > .tela-calculadora > input {
+  margin-bottom: 25px;
+}
+
+.calculadora > .botoes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  border: none;
+}
+
+.calculadora > .botoes > button {
+  padding: 5px;
+  font-size: 1rem;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.calculadora > .botoes > button:hover {
+  background-color: #2f4f7f;
+}
+
+.calculadora > .botoes > button:active {
+  background-color: #4b5f7e;
+  
+}
+
+.calculadora > .botoes > button:last-child {
+  grid-column: span 1;
+}
